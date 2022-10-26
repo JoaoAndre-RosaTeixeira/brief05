@@ -66,6 +66,7 @@ def proba_exercice_f():
 
     def probabiltys_f(weaver_d, probabiltys_d):
 
+        # création d'un tableau avec tout les pourcentage de proba
         for weaver in df_weaver["weather"]:
             if weaver not in weaver_d["Weather"]:
                 weaver_d["Weather"].append(weaver)
