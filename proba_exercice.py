@@ -81,6 +81,7 @@ def proba_exercice_f():
                 probabiltys_d["Proba(Played | Weather)"].append(no_likelihood(weaver, 'No'))
                 probabiltys_d["Proba(No | Weather)"].append(likelihood(weaver, 'No'))
 
+        # tentative ajout dernier ligne Total
         # probabiltys = pd.DataFrame(probabiltys)
         # probabiltys["Weather"].append("Total")
         # print(probabiltys.loc[((probabiltys["Played"]) & (probabiltys["Weather"] == "Total"))])
@@ -98,6 +99,5 @@ def proba_exercice_f():
 
     # assert (round(prior_probability_pd(), 2) == 64.29)
     # assert (round(prior_probability_li(), 2) == 64.29)
-
     # assert (round(likelihood("Rainy", "No"), 2) == 60)
     probabiltys_f(weaver_dict, probabiltys)
