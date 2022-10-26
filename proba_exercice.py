@@ -61,7 +61,6 @@ def proba_exercice_f():
         b = df_weaver.loc[(df_weaver['played'] == condition)].count()['weather']
 
         c = a / b * 100
-        print(c)
         d = 100 - c
         return d
 
@@ -96,4 +95,8 @@ def proba_exercice_f():
         print(
             f"il y a {int(probabiltys[probabiltys['Weather'] == 'Rainy']['Proba(No | Weather)'].values)}% de chance que le match soit annulé si il pleut")
 
+    # assert (round(prior_probability_pd(), 2) == 64.29)
+    # assert (round(prior_probability_li(), 2) == 64.29)
+
+    # assert (round(likelihood("Rainy", "No"), 2) == 60)
     probabiltys_f(weaver_dict, probabiltys)
